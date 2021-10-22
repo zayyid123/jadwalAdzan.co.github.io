@@ -1,0 +1,219 @@
+/* font google quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling font */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* navbar */
+nav {
+    background-color: #FEF5ED;
+    padding: 5px;
+    top: 0;
+    text-align: center;
+    box-shadow: 3px 3px 3px #99A799;
+}
+
+nav h1{
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav h1 span{
+    font-weight: 700;
+    color: #99A799;
+}
+
+/* main */
+app-description section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+app-description section lottie-player{
+    width: 80vh;
+}
+
+#myMain {
+    text-align: center;
+    background-color: #FEF5ED;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+#myMain h1{
+    padding: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input div{
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input input{
+    width: 100%;
+    margin-top: 3px;
+}
+
+button{
+    padding: 4px 5px;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #000000;
+    background-color: #99A799;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.mainApp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input h2, .result h2, .resultBulanan h2{
+    margin-bottom: 9px;
+}
+
+.result div, .resultBulanan div{
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.resultBulanan div{
+    overflow-x: auto;
+    width: 500px;
+}
+
+.myResultBulanan table td{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.myResult, .myResultBulanan{
+    align-items: center;
+}
+
+.myResult table, .myResultBulanan table{
+    border-collapse: collapse;
+    margin: auto;
+    text-align: left;
+}
+
+.myResult table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* profil */
+.card{
+    padding: 30px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 25%;
+    height: fit-content;
+    transition-duration: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.myProfil{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact{
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sosmed{
+    width: fit-content;
+}
+
+.sosmed a img{
+    transition-duration: 0.3s;
+    width: 50px;
+}
+
+.sosmed a img:hover{
+    transform: scale(1.05);
+}
+
+.profil{
+    text-align: center;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.profil img{
+    width: 80%;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #99A799;
+    color: #000000;
+    margin-top: 30px;
+}
+
+/* minimize */
+@media screen and (max-width: 1024px) {
+    app-description section{
+        text-align: center;
+    }
+
+    app-description section lottie-player{
+        width: 90%;
+    }
+
+    .input input{
+        width: 100%;
+    }
+
+    .profil{
+        margin-right: 0;
+        margin: 15px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .myProfil{
+        margin-top: 15px;
+    }
+
+    .resultBulanan div{
+        overflow-x: auto;
+        width: 200px;
+    }
+}
