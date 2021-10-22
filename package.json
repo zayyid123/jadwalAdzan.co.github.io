@@ -1,0 +1,39 @@
+{
+  "name": "jadwaladzanco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "lint": "eslint ./src",
+    "fix": "eslint ./src --fix"
+  },
+  "keywords": [],
+  "author": "zayyid",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.4.0",
+    "lottie-web-webpack-loader": "0.0.3",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^1.4.2",
+    "lottie": "0.0.1",
+    "moment": "^2.29.1",
+    "regenerator-runtime": "^0.13.9",
+    "sweetalert2": "^11.1.9"
+  }
+}
